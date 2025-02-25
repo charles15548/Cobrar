@@ -5,15 +5,15 @@ class PagosScreen extends StatefulWidget {
   final int clienteId;
   final String mes;
 
-  PagosScreen(this.clienteId, this.mes);
+  const PagosScreen(this.clienteId, this.mes,{super.key});
 
   @override
-  _PagosScreenState createState() => _PagosScreenState();
+  PagosScreenState createState() => PagosScreenState();
 }
 
-class _PagosScreenState extends State<PagosScreen> {
+class PagosScreenState extends State<PagosScreen> {
   double monto = 0.0;
-  TextEditingController _montoController = TextEditingController();
+  final TextEditingController _montoController = TextEditingController();
 
   @override
   void initState() {

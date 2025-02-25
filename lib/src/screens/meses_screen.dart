@@ -2,13 +2,14 @@ import 'package:flutter/material.dart';
 import 'pagos_screen.dart';
 
 class MesesScreen extends StatelessWidget {
+  
   final int clienteId;
   final List<String> meses = [
     "Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio",
     "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"
   ];
 
-  MesesScreen(this.clienteId);
+    MesesScreen(this.clienteId, {super.key});
 
   void _seleccionarMes(BuildContext context, String mes) {
     Navigator.push(

@@ -3,12 +3,12 @@ import '../database/sqlite_handler.dart';
 import 'meses_screen.dart';
 
 class ClientesScreen extends StatefulWidget {
-  
+  const ClientesScreen({super.key});
   @override
-  _ClientesScreenState createState() => _ClientesScreenState();
+  ClientesScreenState createState() => ClientesScreenState();
 }
 
-class _ClientesScreenState extends State<ClientesScreen> {
+class ClientesScreenState extends State<ClientesScreen> {
   List<Map<String, dynamic>> clientes = [];
 
   @override
